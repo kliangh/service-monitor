@@ -14,8 +14,3 @@ def get_metrics():
 
 def get_trace():
     print(trigger_get_request(host, port, "/trace"))
-
-
-get_health()
-get_metrics()
-get_trace()
