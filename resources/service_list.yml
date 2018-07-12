@@ -1,0 +1,16 @@
+service:
+  -
+    service_name: "local spring service"
+    hostname: "127.0.0.1"
+    port: 8080
+    uris:
+      - /metrics
+      - /health
+      - /trace
+  -
+    service_name: "payment service"
+    hostname: "127.0.0.1"
+    port: 8081
+    uris:
+      - /metrics
+      - /trace

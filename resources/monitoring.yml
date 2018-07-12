@@ -1,8 +1,0 @@
-monitoring-host:
-    local-spring-service:
-        hostname: 127.0.0.1
-        port: 8080
-        uris:
-            - "/metrics"
-            - "/health"
-            - "trace"
