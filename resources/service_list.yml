@@ -1,4 +1,4 @@
-service:
+Service:
   -
     service_name: "local spring service"
     hostname: "127.0.0.1"
