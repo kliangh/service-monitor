@@ -1,8 +1,8 @@
 import logging
 
-from sample.config_logging import setup_logging
-from sample.http_utils import trigger_get_request
-from sample.yaml_utils import parse_yaml_to_objects
+from servicemonitor.config_logging import setup_logging
+from servicemonitor.http_utils import trigger_get_request
+from servicemonitor.yaml_utils import parse_yaml_to_objects
 
 setup_logging()
 
