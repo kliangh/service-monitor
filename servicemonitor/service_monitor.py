@@ -13,4 +13,7 @@ services = parse_yaml_to_objects(service_list_path, target_object)
 
 for service in services:
     for uri in service.uris:
-        logging.info(trigger_get_request(service.hostname, service.port, uri))
+        try:
+            logging.info(trigger_get_request(service.hostname, service.port, uri))
+        except ConnectionRefusedError:
+            logging.error("Unreachable service: %s", service.service_name)
